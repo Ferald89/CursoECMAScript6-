@@ -43,4 +43,24 @@ let {name,age}= person
 
 console.log(name,age)
 
+let team1 = ['Oscar','Julian','Ricardo']
+let team2 = ['Valeria','Yesica','Camila']
+// esto se hace para crear un elementos asignar elementos de un lugar a otro
+let education = ['David',...team1,...team2]
+
+console.log(education)
+
+//La diferencia entre let y var es que let se ejectura solo en el bloque 
+//del programa y var se puede ocuparar en diferente parte de progrma
+
+{
+    var globalvar = "Global var"
+}
+{
+    let globallet = "Global let"
+}
+
+console.log(globalvar);
+console.log(globallet);
+
 
