@@ -63,4 +63,50 @@ console.log(education)
 console.log(globalvar);
 console.log(globallet);
 
+//EMPIEZA CLASE 4
+let name = 'oscar'
+let age = 32
+//Así se crean los objetos en javascript
+//es5
+obj = {name : name,age:age}
+//es6
+obj1 = {name,age}
+console.log(obj);
+console.log(obj1);
 
+const names = [
+    {name:'Fernando', age:26},
+    {name:'Yesica', age:27}
+]
+//Con es5 Para recorrer la lista se ejecuta un función
+//anonima
+let listOfName=names.map(function(item){
+    console.log(item.name)
+})
+//Con es6 se pueden acceder a las arrow function
+let listOfName1 = names.map(items=>console.log(items.name))
+//Arrow functions
+
+const squeare = num => num*num
+const decirHola = (name,age)=>{
+    console.log(`Hello my name is ${name} and I am ${age}`);
+    
+}
+
+decirHola(names[1].name,names[1].age)
+
+//PROMESAS
+//Promesas necesitan dos elementos resolver o rechazar
+const helloPromise = () => {
+    return new Promise((resolve,reject) =>{
+        if(true){
+            resolve('Hey.!')
+        }else{
+            reject('Algo salio mal.!')
+        }
+    })
+}
+
+helloPromise()
+ .then(response => console.log(response))
+ .catch(error => console.log(error))
