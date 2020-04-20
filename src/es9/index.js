@@ -37,7 +37,7 @@ helloWorld()
 
 
 
-const regextData = /([0-9]{4}-[0-9]{2}-[0-9]{2})/
+const regextData = /([0-9]{4})-([0-9]{2})-([0-9]{2})/
 const match =regextData.exec('2018-04-09')
 const year = match[1]
 const month = match[2]
